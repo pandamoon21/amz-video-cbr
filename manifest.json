@@ -1,0 +1,35 @@
+{
+ "manifest_version": 2,
+ "name": "Amazon CBR Enabler",
+ "description": "Enable higher quality CBR streams for Amazon Video",
+ "version": "0.1.2",
+ "permissions": [
+  "https://www.amazon.co.jp/*",
+  "https://www.amazon.co.uk/*",
+  "https://www.amazon.com/*",
+  "https://www.amazon.de/*",
+  "https://www.primevideo.com/*"
+ ],
+ "applications": {
+  "gecko": {
+   "id": "content@"
+  }
+ },
+ "content_scripts": [
+  {
+   "js": [
+    "Amazon_CBR_Enabler.js"
+   ],
+   "run_at": "document_end",
+   "matches": [
+    "https://www.amazon.com/*",
+    "https://www.amazon.co.uk/*",
+    "https://www.amazon.de/*",
+    "https://www.amazon.co.jp/*",
+    "https://www.primevideo.com/*"
+   ],
+   "all_frames": true,
+   "match_about_blank": true
+  }
+ ]
+}
