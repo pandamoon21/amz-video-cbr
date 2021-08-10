@@ -3,6 +3,7 @@
  "name": "Amazon CBR Enabler",
  "description": "Enable higher quality CBR streams for Amazon Video",
  "version": "0.1.2",
+ "author": "script by nyuszika7h packed into extension by techno-arch"
  "permissions": [
   "https://www.amazon.co.jp/*",
   "https://www.amazon.co.uk/*",
@@ -10,11 +11,6 @@
   "https://www.amazon.de/*",
   "https://www.primevideo.com/*"
  ],
- "applications": {
-  "gecko": {
-   "id": "content@"
-  }
- },
  "content_scripts": [
   {
    "js": [
